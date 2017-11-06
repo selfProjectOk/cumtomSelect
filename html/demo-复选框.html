@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo</title>
+		<script src="../js/jquery-3.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<link href="../css/optionPicker.css" rel="stylesheet"/>
+		<style type="text/css">
+
+			.-optionSelect-{
+				height: 30px;
+				line-height: 30px;
+				float: left;
+				width: 100px;
+				margin-right: 15px;
+				font-size: 12px;
+			}
+
+		</style>
+	</head>
+	<body>
+
+
+	<div class="-optionSelect- sel1">
+		<ul>
+			<li value="1">产品名称</li>
+			<li value="2">产品代码</li>
+			<li value="3">基金经理</li>
+			<li value="4">基金公司</li>
+			<li value="5">托管机构</li>
+		</ul>
+	</div>
+
+	<script src="../js/optionPicker.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		$('.sel0').on('change',function(){
+			console.log($(this).val());
+//			console.log($(this).data('value'));
+//			console.log($(this).data('dataArray'));
+		});
+		$('.sel1').on('change',function(){
+			console.log($(this).val());
+		});
+		$('.sel2').on('change',function(){
+			console.log($(this).val());
+		});
+
+
+	</script>
+
+	</body>
+
+</html>
